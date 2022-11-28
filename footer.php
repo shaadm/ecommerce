@@ -13,7 +13,7 @@
                 <h4 class="font-rubik font-size-20">Newsletter</h4>
                 <form class="form-row">
                   <div class="col">
-                    <input type="text" class="form-control" placeholder="Email *">
+                    <input type="text" class="form-control" placeholder="Email Address">
                   </div>
                   <div class="col">
                     <a href="newsletter.php" button type="submit" class="btn btn-primary mb-2">Subscribe</button></a>

@@ -12,9 +12,6 @@ ob_start();
 </div>
 </div>
 </div>
-
-
-
 <!-- Wrapper container -->
 <div class="container py-4">
 
@@ -24,26 +21,25 @@ ob_start();
     <!-- Name input -->
     <div class="mb-3">
       <label class="form-label" for="name">Name</label>
-      <input class="form-control" id="name" type="text" placeholder="Name" />
+      <input class="form-control" id="name" type="text" required />
     </div>
 
     <!-- Email address input -->
     <div class="mb-3">
       <label class="form-label" for="emailAddress">Email Address</label>
-      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" />
+      <input class="form-control" id="emailAddress" type="email" required />
     </div>
 
     <!-- Message input -->
     <div class="mb-3">
       <label class="form-label" for="message">Message</label>
-      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"></textarea>
+      <textarea class="form-control" id="message" type="text" required style="height: 10rem;"></textarea>
     </div>
 
     <!-- Form submit button -->
     <div class="d-grid">
-      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
     </div>
-
   </form>
 
 <!-- Success Message -->

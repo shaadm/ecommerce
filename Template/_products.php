@@ -9,7 +9,7 @@
             $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
         }
     }
-    
+
     $item_id = $_GET['item_id'] ?? 1;
     foreach ($product->getData() as $item) :
         if ($item['item_id'] == $item_id) :
@@ -61,7 +61,7 @@
                     <tr class="font-rale font-size-14">
                         <td>Price:</td> 
                         <td class="font-size-20 text-danger">$<span><?php echo $item['item_price'] ?? 0; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
-                     </tr>
+                    </tr>
 
                 </table>
 
@@ -122,9 +122,8 @@
                 <div class="col-12">
                     <h6 class="font-rubik">Product Description</h6>
                     <hr>
-                    <p class="font-rale font-size-14">The first-ever BMW 2 Series Gran Coupé introduces a new form of authority with a bold character to the compact class. It is above all the uncompromising, performance-oriented aesthetic that unmistakeably reveals its ambitions. In keeping with high-end technologies and perfectly tuned driving dynamics features, the BMW 2 Series Gran Coupé stands out from the crowd with ease and pursues its very own path.</p>
-                    <p class="font-rale font-size-14">The first-ever BMW 2 Series Gran Coupé lends an extremely light appearance to authority on wheels of up to 19″ in size. The distinctive BMW kidney grille, LED headlights and rear lights, frameless doors, powerful shoulders and the sporty rear – sheer authority that is also reflected in the interior. With illuminated interior trim finishers and optional sport seats, the driver-oriented cockpit creates an ambience that is exclusive and dynamic in equal measures. At the same time, the two 10.25″ displays with Live Cockpit Professional and the BMW Head-Up Display keep you fully informed.</p>
-            </div>
+                    <p class="font-rale font-size-14"><?php echo $item['item_specs'] ?? 0; ?>.</p>
+                </div>
         </div>
     </div>
 
