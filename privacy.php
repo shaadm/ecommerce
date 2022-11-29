@@ -7,11 +7,11 @@ ob_start();
 
 <div class="container py-3">
     <div class="row h-100 align-items-center py-5">
-      <div class="col-lg-6">
-        <h1 class="display-4">Privacy Policy</h1>
-
-</div>
-</div>
+        <div class="col-lg-6">
+            <h1 class="display-4">Privacy Policy</h1>
+            <!-- To Do : Add text -->
+        </div>
+    </div>
 </div>
 
 <!-- Privacy Policy -->

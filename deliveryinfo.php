@@ -7,11 +7,13 @@ ob_start();
 
 <div class="container py-3">
     <div class="row h-100 align-items-center py-5">
-      <div class="col-lg-6">
-        <h1 class="display-4">Delivery Information</h1>
+        <div class="col-lg-6">
+            <h1 class="display-4">Delivery Information</h1>
 
-</div>
-</div>
+            <!-- To Do : Add Text Here -->
+
+        </div>
+    </div>
 </div>
 
 

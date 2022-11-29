@@ -131,17 +131,6 @@ $(document).ready(function(){
 
             }}); // closing ajax request
     }); // closing qty down button
-
-
-    //Refresh page after adding item to cart
-    // $( ".product-add-to-cart" ).click(function(e) {
-    //     e.preventDefault();
-    //     $('#add-to-cart-form').submit();   
-    //     setTimeout(function() { 
-    //         window.location.reload(1);
-    //     },1000);
-    // });
-
-    
+   
 });
 

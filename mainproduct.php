@@ -7,14 +7,14 @@ ob_start();
 
 <div class="container py-3">
     <div class="row h-100 align-items-center py-5">
-      <div class="col-lg-6">
-        <h1 class="display-4">Select Your Car</h1>
+        <div class="col-lg-6">
+            <h1 class="display-4">Select Your Car</h1>
 
-</div>
-</div>
+        </div>
+    </div>
 </div>
 
-    <section id="top-sale">
+<section id="top-sale">
     <div class="container py-5">
         <h4 class="font-rubik font-size-20">Your Car Selection</h4>
         <hr>
@@ -23,7 +23,9 @@ ob_start();
             <?php foreach ($product_shuffle as $item) { ?>
             <div class="item py-2">
                 <div class="product font-rale">
-                    <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/M2Sport.PNG"; ?>" alt="product1" class="img-fluid"></a>
+                    <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img
+                            src="<?php echo $item['item_image'] ?? "./assets/products/M2Sport.PNG"; ?>" alt="product1"
+                            class="img-fluid"></a>
                     <div class="text-center">
                         <h6><?php echo  $item['item_name'] ?? "Unknown";  ?></h6>
                         <div class="rating text-warning font-size-12">
@@ -47,13 +49,14 @@ ob_start();
                             }
                             ?>
 
-</form>
+                        </form>
                     </div>
                 </div>
             </div>
             <?php } // closing foreach function ?>
         </div>
-
+    </div>
+</section>
 
 
 <?php
