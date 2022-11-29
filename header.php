@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,8 +33,8 @@
 
     <?php
     // require functions.php file
-require ('functions.php');
-  ?>
+    require ('functions.php');
+    ?>
 
 </head>
 
@@ -42,8 +46,18 @@ require ('functions.php');
             <p class="font-rale font-size-12 text-black-50 m-0"> E-Commerce website for SNF Car Company. Moving into the
                 new era of technology. </p>
             <div class="font-rale font-size-14">
-                <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
-                <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+                <?php
+                        if (isset($_SESSION["useruid"])) {
+                            echo "<a class='px-3 border-right border-left text-dark' href='profile.php'>". $_SESSION["useruid"] ."</a>";
+                            echo "<a class='px-3 border-right border-left text-dark' href='includes/logout.inc.php'>Log out</a>";
+                        }
+                        
+                        else{
+                            echo "<a class='px-3 border-right border-left text-dark' href='signup.php'>Sign up</a>";
+                            echo "<a class='px-3 border-right border-left text-dark' href='login.php'>Log in</a>";
+                        }
+                        ?>
+                        <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
             </div>
         </div>
 
@@ -61,24 +75,17 @@ require ('functions.php');
                         <a class="nav-link" href="index.php">On Sale</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.php">About</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="mainproduct.php">Products</a>
-
-
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.php">Contact</a>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="comingsoon.php">Coming Soon</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
+                        <a class="nav-link" href="aboutus.php">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.php">Contact</a>
+                    </li>                   
 
                 </ul>
                 <form action="#" class="font-size-14 font-rale"></form>

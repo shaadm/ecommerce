@@ -273,6 +273,12 @@ img.carousel-img  {
   }
 }
 
+/* Center Signup Form */
+.signup-form,
+.login-form {
+  display: flex;
+  justify-content: center;
+}
 
 
 
